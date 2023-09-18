@@ -1,0 +1,368 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+    list-style-type: none;
+    color: black;
+    text-decoration: none;
+  
+  }
+  
+  *,
+  *::before,
+  *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 2px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+  
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  /* Firefox */
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+  html,body{
+    overflow-x: hidden;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .child_drop_down ul {
+    position: absolute;
+    z-index: 4;
+    background: white;
+    width:95%;
+    height: 18rem !important;
+    overflow: scroll;
+  }
+  .child_drop_down ul li {
+      padding: 7px;
+      background: #f6f6f6;
+      margin: 1rem 0rem;
+      font-weight: bold;
+      cursor: pointer;
+  }
+  
+  .child_drop_down ul li:hover{
+    background-color: #d4d3d3;
+  }
+  
+  body {
+    color: black;
+    -webkit-font-smoothing: antialiased;
+    margin: 0 auto;
+    overflow: hidden;
+    /* background-color: #FAFAFA; */
+    max-width: 1279px;
+    width: 100%; 
+    box-sizing: border-box;
+    /* background: white !important; */
+    background-color:#ededed;
+    
+  }
+  
+  .active{
+    background-color: #ffc107;
+  }
+  
+  .margin_top{
+    margin-top:2rem !important;
+  }
+  
+  .font_bold{
+    font-weight: bold;
+  }
+  header{
+   grid-column: 2/ span 5;
+  
+  }
+  main{
+    grid-column: 2/ span 5;
+    overflow: auto;
+   
+  }
+  aside{
+  grid-row: 1/ span 3;
+  }
+  
+  .hide_aside{
+    grid-template-columns: 0fr 1fr 1fr 1fr 1fr ;
+  
+  }
+  
+  .show_aside{
+    grid-template-columns: 0.7fr 1fr 1fr 1fr 1fr ;
+  
+  }
+  
+  
+  .side_container {
+    position: fixed;
+    height: 100%;
+    width: 11rem;
+    overflow: hidden;
+    margin-left: 5px;
+    background: white;
+    border-radius: 5px;
+    border: 0.1px solid #ffc10761;
+    z-index: 50;
+  }
+  footer{
+    grid-column: 2/ span 5;
+  }
+  
+  .pkkard_container_layout{
+    display: grid;
+    /* grid-template-columns: repeat(7,1fr); */
+    grid-gap: 5px;
+  }
+  
+  main {
+    background-color: #f4f6f9;
+    min-height: 30rem;
+    height: 100%;
+    margin-top: 3.4rem;
+  }
+  aside{
+  }
+  
+  footer {
+    height: 2rem;
+    background-color: #e4dfdf;
+    margin-top: 1.1rem;
+  }
+  
+  
+  footer p{
+    text-align: center;
+    margin-top: 4px;
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  
+  
+  
+  nav {
+    background-color: white;
+    height: 3.4rem;
+    box-shadow: 2px 5px 5px -1px grey;
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+  }
+  .navigation {
+    width: 85%;
+    overflow: hidden;
+  }
+  
+  .custom_btn {
+    border: none;
+    padding: 1rem;
+    background: white;
+    cursor: pointer !important;
+  }
+  .navigation ul {
+  
+    width: 15rem;
+  
+  }
+  
+  .navigation ul li a i {
+    font-size: 1.5rem;
+    color: #625f5f;
+  }
+  .logo {
+    width: 9rem;
+    height: 4rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+  }
+  
+  .side_navigation ul{
+  padding-left: 0rem;
+  padding: 5px;
+  margin-left: 5px;
+  height: 30rem;
+  overflow: auto;
+  }
+  .side_navigation ul li {
+    margin-bottom: 1rem;
+    width: 100%;
+    padding: 0 7px;
+  }
+  .side_navigation ul li:hover{
+    background-color:#ffc107;
+  }
+  .side_navigation ul li a {
+    height: 2rem;
+    width: 100%;
+  }
+  
+  .side_navigation ul li a span, .side_navigation ul li a i {
+    color: #625f5f;
+    font-weight: bold;
+    font-size: 0.8rem;
+  }
+  
+  .custom_bg_card{
+    background: linear-gradient(167deg, tomato, lab(84 18.55 74.6)) !important;
+  }
+  
+  .dashboard_row{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+  }
+  
+  .log_in_container {
+  
+    background: white;
+    height: 35rem;
+    position: relative;
+  }
+  
+  
+  .login_col {
+    width: 24rem;
+    padding: 1rem;
+    margin: 0 auto;
+    box-shadow: 0px 2px 8px -1px gray;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 10rem;
+    left: 30%;
+  }
+  
+  
+  .signup_col {
+    width: 95%;
+    margin: 0 auto;
+    box-shadow: 0px 1px 6px 0px gray;
+    padding: 1.5rem;
+    background: linear-gradient(181deg, #ff00000f 60% , #ffff0029 );
+    margin-top: 2rem;
+    background-color: white;
+  } 
+  .pkaard_logo {
+    width: 7rem;
+    display: block;
+    height: 3rem;
+    margin: auto;
+  }
+  .heading_title {
+    transform: translateY(40px);
+  }
+  .custom_require{
+    color: red;
+    font-weight: bold;
+  }
+  .reward_point {
+    float: right;
+    margin-right: 3rem;
+    font-weight: bold;
+    border: 1px solid;
+    padding: 0.4rem 1rem;
+    background: #e2ce33;
+    border-radius: 0.3rem;
+  }
+  @media screen and (max-width: 980px){
+    .custom_btn{
+      transform: translateX(3rem);
+    } 
+  }
+  @media screen and (max-width: 767px) {
+    
+  
+  .custom_btn{
+    transform: translateX(4rem);
+  } 
+  }
+  
+  @media screen and (max-width: 567px) {
+    .custom_btn{
+      transform: translateX(5.6rem);
+    } 
+  }
+  
+  
+  @media screen and (max-width: 543px){
+    .custom_btn{
+      transform: translateX(5.8rem);
+    } 
+  }
+  
+  
+  @media screen and (max-width: 455px){
+    .dashboard_row {
+      grid-template-columns: repeat(2,1fr);
+  }
+  .navigation ul {
+    width: 10rem;
+  }
+  .custom_btn{
+    transform: translateX(5.3rem);
+  } 
+  .logo {
+    width: 5rem;
+    height: 3rem;
+   
+  } 
+  .side_container {
+    width: 9rem;
+  }
+  .side_navigation ul {
+    margin-left: 0px;
+  
+  }
+  .side_navigation ul li {
+  
+    padding: 0px;
+  }
+  }
+  
+  @media screen and (max-width: 360px) {
+    .navigation ul {
+      width: 8rem;
+  }
+  .navigation ul li a i {
+    font-size: 1rem;
+   
+  }
+ 
+    
+  }
+  
+  .ql-container.ql-snow {
+    height: 15rem !important;
+  }
